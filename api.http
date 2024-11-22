@@ -1,0 +1,30 @@
+GET http://localhost:3000
+
+###
+
+GET http://localhost:3000/api/rooms
+
+###
+
+POST http://localhost:3000/api/rooms
+Content-Type: application/json
+
+{
+    "room_number": "A0001",
+    "type": "standard",
+    "price": 1000
+}
+
+###
+
+PATCH http://localhost:3000/api/rooms/1
+Content-Type: application/json
+
+{
+    "room_number": "A0001",
+    "type": "Standard Ex",
+    "price": 1500
+}
+
+###
+DELETE 
